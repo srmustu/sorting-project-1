@@ -1,0 +1,14 @@
+[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+(Dizimizi küçükten büyüğe doğru sıraladığımızı varsayarasak)
+Adım : 1
+En küçük sayı aranır. 2
+
+Adım : 2 
+En küçük sayı en başta ki sayı ile yer değiştirir, zaten başta ise yerinde kalır
+
+Adım : 3
+2. en küçük sayı aranır. 3
+
+Adım : 4 
+Bulunan en küçük ikinci sayı 2. basamağa yazılır

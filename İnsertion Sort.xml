@@ -1,0 +1,34 @@
+#[22,27,16,2,18,6] -> Insertion Sort
+#Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+#Big-O gösterimini yazınız.
+#Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+#Average case: Aradığımız sayının ortada olması
+#Worst case: Aradığımız sayının sonda olması
+#Best case: Aradığımız sayının dizinin en başında olması.
+
+Adım : 1
+#Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+(Diziyi küçükten büyüğe doğru sıraladığımızı varsayıyoruz)
+
+1- İlk sayı olan 22'nin halihazırda sıralı olduğunu varsayarak onu ilk sırada tutarız -> [22,27,16,2,18,6]
+2- İkinci sayımız 27. 22'den büyük olduğundan onu 22'nin sağına yerleştiririz. -> [22,27,16,2,18,6]
+3- Üçüncü sayımız 16. 22'den küçük olduğundan onu 22'nin soluna yerleştiririz. -> [16,22,27,2,18,6]
+4- Dördüncü sayımız 2. 22'den küçük olduğundan onu 22'nin soluna yerleştiriyoruz, onun solunda başka sayı varsa 
+   bu işlemi daha küçükse sola kaydır kuralını devam ettirerek tekrarlıyoruz. -> [2,16,22,27,18,6]
+5- Beşinci sayımız 18. 22'den küçük olduğundan onu 22'nin soluna yerleştiriyoruz, onun solunda başka sayı varsa 
+   bu işlemi daha küçükse sola kaydır kuralını devam ettirerek tekrarlıyoruz. -> [2,16,18,22,27,6]
+6- Altıncı sayımız 6. 22'den küçük olduğundan onu 22'nin soluna yerleştiriyoruz, onun solunda başka sayı varsa 
+   bu işlemi daha küçükse sola kaydır kuralını devam ettirerek tekrarlıyoruz. -> [2,6,16,22,27,18]
+
+Adım : 2
+#Big-O gösterimini yazınız.
+
+Dizimizin eleman sayısı ne kadar artarsa işlem o kadar uzun süreceğinden ötürü , insertion sort algoritmasının Big- O gösterimi n'dir.
+
+Adım : 3
+#Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+#Average case: Aradığımız sayının ortada olması
+#Worst case: Aradığımız sayının sonda olması
+#Best case: Aradığımız sayının dizinin en başında olması.
+
+18 sayısı Average case'e girer. Algoritmanın bu dizi özelinde worst case'i 6'dır. Best case'i ise 16'dır.
