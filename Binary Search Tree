@@ -1,0 +1,45 @@
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+Örnek: root x'dir. root'un sağından y bulunur. Solunda z bulunur vb.
+
+Adım : 1
+İlk aşamamız root'u belirlemek olacaktır. Farklı methodlar denenbilir. Bu methodda dizinin ortasında bulunan elemanı (yeni root olarak belirleyerek) baz alarak ilerleyeceğiz.
+Root : 3
+
+Adım : 2
+Dizimizin ilk elemanından başlayarak elemanımız root'tan büyük ise sağına küçük ise soluna ekleyerek devam edeceğiz
+Sıralı dizi [3,7]
+Ana dizi [5, 1, 8, 6, 0, 9, 4, 2]
+
+Adım : 3
+Aynı işlemi root'un sağında veya solunda başka sayılar varsa onları da root gibi birer dönemeç olarak düşünerek root'ta uyguladığımız methodu uygulayarak devam edeceğiz.
+Sıralı dizi [3,5,7]
+Ana dizi [1, 8, 6, 0, 9, 4, 2]
+
+Adım : 4
+Sıralı dizi [1,3,5,7]
+Ana dizi [8, 6, 0, 9, 4, 2]
+
+Adım : 5
+Sıralı dizi [1,3,5,7,8]
+Ana dizi [6, 0, 9, 4, 2]
+
+Adım : 6
+Sıralı dizi [1,3,5,6,7,8]
+Ana dizi [0, 9, 4, 2]
+
+Adım : 7
+Sıralı dizi [0,1,3,5,6,7,8]
+Ana dizi [9, 4, 2]
+
+Adım : 8
+Sıralı dizi [0,1,3,5,6,7,8,9]
+Ana dizi [4, 2]
+
+Adım : 9
+Sıralı dizi [0,1,3,4,5,6,7,8,9]
+Ana dizi [2]
+
+Adım : 10
+Sıralı dizi [0,1,2,3,4,5,6,7,8,9]
+Ana dizi []
