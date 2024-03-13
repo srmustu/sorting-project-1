@@ -1,0 +1,33 @@
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+
+Adım 1:
+Toplam eleman sayısı tesipt edilir. 6
+
+Adım 2: 
+İlk 3 ve son 3 elemanlar iki farklı dizi olarak ayrılır
+[16,21,11] ve [8,12,22]
+
+Adım 3:
+İlk dizi de ikiye bölünür (ortada ki elamanın hangi yeni dizi parçasında olduğunun bir önemi yoktur)
+[16,21] ve [11]
+
+Adım 4:
+İlk küçükten büyüğe doğru sıralanır. (Sıralama zaten doğru olduğundan yer değişikliği gerçekleştirilmez)
+[16,21]
+
+Adım 5: 
+İlk dizi ikinci dizi ile basamaklarında ki sayıların karşılaştırılması yapılarak ve sıralama güncellenerek yeniden birleştirilir
+- İlk dizinin birinci eleman 16, ikinci dizinin birinci elemanı 11'dir. Yeni dizinin ilk sırasına 11, ikinci sırasına 16 yazılarak aynı işlem tekrarlanır 
+  fakat ikinci dizi tek elemandan oluştuğundan dolayı işlem durur ve birinci dizinin geri kalan öğeleri aynen yazılır
+[11,16,21]
+
+Adım 6:
+Sol kısımda ki dizilerin sıralama işlemi tamamlandı. Aynı işlemler sağ tarafta ki diziler içinde gerçekleştirilir.
+[8,12,22]
+
+Adım 7:
+Aynı işlemler kullanılarak solda ki ve sağda ki dizi birleştirilir.
+[8,11,12,16,21,22]
