@@ -3,6 +3,7 @@
 Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
 Big-O gösterimini yazınız.
 
+(Dizinin küçükten büyüğe sıralancağı varsayılarak hazırlanmıştır)
 Adım 1:
 Toplam eleman sayısı tesipt edilir. 6
 
@@ -31,3 +32,7 @@ Sol kısımda ki dizilerin sıralama işlemi tamamlandı. Aynı işlemler sağ t
 Adım 7:
 Aynı işlemler kullanılarak solda ki ve sağda ki dizi birleştirilir.
 [8,11,12,16,21,22]
+
+Big-O n gösterimi merge sort algoritmasında problemi sürekli ikiye bölerek ilerlediğimizden 2üzeri x = n yani logn , dizi elamanları arttıkçada işlem uzayacağından ötürü de n totalde ise nlogn'dir
+
+
